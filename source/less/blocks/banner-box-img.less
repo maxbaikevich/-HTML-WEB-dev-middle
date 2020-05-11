@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     z-index: 2;
+    border-top:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+
 }
 
 .banner-box-img__one {
@@ -9,6 +12,10 @@
     background-repeat: no-repeat;
     width:321px; 
     height: 160px;
+    border-right: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .banner-box-img__two {
@@ -16,4 +23,37 @@
     background-repeat: no-repeat;
     width:321px; 
     height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    
+}
+.banner-box-img__hedline {
+    margin: 0;
+    line-height: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+.banner-box-img__link {
+    position: relative;
+    text-align: center; 
+    color: #ef7f1a;
+}
+.banner-box-img__link::before{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 1px;
+    background-color:#ef7f1a;
+    bottom: 10px;
+}
+.banner-box-img__link--mod::before {
+
+    width: 90px;
+  
+  
 }

@@ -1,0 +1,228 @@
+.slider-footer__discription {
+  width: 250px;
+  padding-left: 18px;
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.slider-footer__content {
+  position: relative;
+  width: 300px;
+  margin: 0;
+}
+.slider-footer__table {
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  color: #ffffff;
+  z-index: 55;
+  width: 230px;
+  border-collapse: collapse;
+  display: none;
+}
+.slider-footer__th {
+  border: 1px solid #ffffff;
+  width: 100px;
+  text-align: left;
+  padding-left: 5px;
+}
+.slider-footer__td {
+  border: 1px solid #ffffff;
+  width: 100px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.slider-footer__box {
+  position: relative;
+  width: 250px;
+}
+.slider-footer__content::before {
+  position: absolute;
+  content: "";
+
+  width: 250px;
+  height: 480px;
+  z-index: 25;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.slider-footer__content:hover::before {
+  display: block;
+}
+.slider-footer__content:hover + .slider-footer__discription {
+  position: relative;
+  z-index: 55;
+  color: #ffffff;
+}
+.slider-footer__content:hover .slider-footer__table {
+  display: block;
+}
+
+.slider-footer {
+  width: 300px;
+  margin: 0;
+  outline: none;
+}
+
+.slider-footer__size-box {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+.slider-footer__info {
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+}
+.slick-slide {
+  outline: none;
+}
+
+.slider-footer__size-box {
+  margin: 0;
+}
+
+.slider-footer__number-size {
+  display: block;
+  border: 1px solid #ef7f1a;
+  line-height: 10px;
+  width: 30px;
+  text-align: center;
+  padding-top: 2px;
+  box-sizing: border-box;
+  color: #ef7f1a;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+.slider-footer__number-size--disable {
+  border: 1px solid #bababa;
+  color: #bababa;
+}
+
+.slider-footer__size {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.slider-footer__price {
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  right: 40px;
+}
+.slider-footer__price::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon/basketorange.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 22px;
+  right: -30px;
+  top: 8px;
+}
+
+.slider-footer__hedline {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.slider-footer__text {
+  margin: 0;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.slider-footer__number-size-box {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.slider-footer__link {
+  position: absolute;
+  top: 240px;
+  left: 80px;
+  color: #ef7f1a;
+  text-decoration: #ef7f1a;
+  z-index: 55;
+  display: none;
+}
+.slider-footer__link::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 1px;
+  background-color: #ef7f1a;
+  bottom: 9px;
+}
+.slider-footer__content:hover .slider-footer__link {
+  display: block;
+}
+.slider-footer__content__new {
+  position: relative;
+}
+.slider-footer__content__new::after {
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 15px;
+  border-radius: 2px;
+  content: "new";
+  color: #ffffff;
+  top: 50px;
+  left: 10px;
+  text-align: center;
+  line-height: 16px;
+  z-index: 70;
+  background-color: #000000;
+}
+.slider-footer__content__sale {
+  position: relative;
+}
+.slider-footer__content__sale::after {
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 15px;
+  border-radius: 2px;
+  content: "sale";
+  color: #ffffff;
+  top: 50px;
+  left: 10px;
+  text-align: center;
+  line-height: 16px;
+  z-index: 70;
+  background-color: #000000;
+}
+.slider-footer__content__flag-franch {
+  position: relative;
+}
+.slider-footer__content__flag-franch::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon/flamefranch.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 12px;
+  z-index: 99;
+  top: 30px;
+  left: 10px;
+}
+.slider-footer__content__flag-itali {
+  position: relative;
+}
+.slider-footer__content__flag-itali::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon/flameitali.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 12px;
+  z-index: 99;
+  top: 30px;
+  left: 10px;
+}
